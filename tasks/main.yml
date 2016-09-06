@@ -1,0 +1,5 @@
+---
+- name: Install NameChanger via Homebrew Cask
+  homebrew_cask:
+    name: namechanger
+  when: ansible_os_family == "Darwin"
